@@ -3,7 +3,7 @@
 mvladi00@fesb.hr
 Start1234!
 
-APP can be tested on : https://superlative-puffpuff-ea9e1d.netlify.app
+APP can be tested on : https://grand-kitten-fc36fc.netlify.app
 
 NOTE: the issue with redirection seems to be only appearing sometimes due to some netlify restrictions.
 
