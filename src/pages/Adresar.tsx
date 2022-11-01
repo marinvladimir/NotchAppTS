@@ -28,9 +28,12 @@ const StyledFavIcon = styled(FavIcon)<IIconProps>`
 `;
 
 const dropDownData = [
-  { value: "name", label: "Name" },
-  { value: "lastName", label: "Last Name" },
-  { value: "email", label: "Email" },
+  { value: "name_ascending", label: "Name Ascending" },
+  { value: "name_descending", label: "Name Descending" },
+  { value: "lastName_ascending", label: "Last Name Asc" },
+  { value: "lastName_descending", label: "Last Name Desc" },
+  { value: "email_asc", label: "Email Ascending" },
+  { value: "email_desc", label: "Email Descending" },
 ];
 
 const Adresar = ({
@@ -90,21 +93,55 @@ const Adresar = ({
     let initialArray = contacts;
 
     switch (decision) {
-      case "name": {
+      case "name_ascending": {
         initialArray.sort((a: { name: string }, b: { name: string }) =>
-          a.name > b.name ? 1 : b.name > a.name ? -1 : 0
+          a.name.toLowerCase() > b.name.toLowerCase()
+            ? 1
+            : b.name.toLowerCase() > a.name.toLowerCase()
+            ? -1
+            : 0
         );
         return initialArray;
       }
-      case "lastName": {
+      case "name_descending": {
+        initialArray.sort((a: { name: string }, b: { name: string }) =>
+          a.name.toLowerCase() < b.name.toLowerCase()
+            ? 1
+            : b.name.toLowerCase() < a.name.toLowerCase()
+            ? -1
+            : 0
+        );
+        return initialArray;
+      }
+      case "lastName_ascending": {
         initialArray.sort((a: { lastName: string }, b: { lastName: string }) =>
-          a.lastName > b.lastName ? 1 : b.lastName > a.lastName ? -1 : 0
+          a.lastName.toLowerCase() > b.lastName.toLowerCase()
+            ? 1
+            : b.lastName.toLowerCase() > a.lastName.toLowerCase()
+            ? -1
+            : 0
         );
         return initialArray;
       }
-      case "email": {
+      case "lastName_descending": {
+        initialArray.sort((a: { lastName: string }, b: { lastName: string }) =>
+          a.lastName.toLowerCase() < b.lastName.toLowerCase()
+            ? 1
+            : b.lastName.toLowerCase() < a.lastName.toLowerCase()
+            ? -1
+            : 0
+        );
+        return initialArray;
+      }
+      case "email_asc": {
         initialArray.sort((a: { email: string }, b: { email: string }) =>
-          a.email > b.email ? 1 : -1
+          a.email.toLowerCase() > b.email.toLowerCase() ? 1 : -1
+        );
+        return initialArray;
+      }
+      case "email_desc": {
+        initialArray.sort((a: { email: string }, b: { email: string }) =>
+          a.email.toLowerCase() < b.email.toLowerCase() ? 1 : -1
         );
         return initialArray;
       }

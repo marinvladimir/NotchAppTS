@@ -10,7 +10,7 @@ const Header = () => {
       <HeaderBar>
         <SliderMenu>
           <li onClick={() => signOut(auth)}>Sign Out</li>
-          <li onClick={() => navigate("/adresar")}>Adresar</li>
+          <li onClick={() => navigate("/adresar")}>Directory</li>
           <li onClick={() => navigate("/kontakt")}>Contact</li>
           <li onClick={() => navigate("/adresar/omiljeni")}>Favorites</li>
         </SliderMenu>
