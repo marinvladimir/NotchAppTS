@@ -8,7 +8,7 @@ const DropDownMenu = styled.div`
   border-radius: 0.5rem;
   background: ghostwhite;
   max-height: 7rem;
-  max-width: 8rem;
+  max-width: 12rem;
   display: none;
 `;
 
@@ -25,8 +25,6 @@ const DropDownItem = styled.div`
 `;
 
 const DropDownWrapper = styled.div`
-  //height: 12rem;
-
   :hover {
     div {
       display: block;
