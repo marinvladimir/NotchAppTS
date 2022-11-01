@@ -8,7 +8,7 @@ export const Spacer = styled.div`
 
 // form's styled components
 
-export const FormWrapper = styled.div`
+export const AnimatedFormWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,6 +24,14 @@ export const FormWrapper = styled.div`
   }
   animation-name: resize;
   animation-duration: 1s;
+`;
+
+export const FormWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 `;
 
 export const FieldsWrapper = styled.div`

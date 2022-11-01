@@ -8,7 +8,7 @@ import {
   FormBorder,
   Spacer,
   SuccessBox,
-  FormWrapper,
+  AnimatedFormWrapper,
 } from "../styles/UI";
 import InputField from "../base/InputField";
 import Button from "../base/Button";
@@ -87,7 +87,7 @@ const Kontakt = ({ saveContact, editContact }: KontaktProps): JSX.Element => {
       >
         {({ values, resetForm, validateForm }) => (
           <Form>
-            <FormWrapper>
+            <AnimatedFormWrapper>
               <FormBorder>
                 <FieldsWrapper>
                   <InputField
@@ -167,7 +167,7 @@ const Kontakt = ({ saveContact, editContact }: KontaktProps): JSX.Element => {
                   )}
                 </FieldsWrapper>
               </FormBorder>
-            </FormWrapper>
+            </AnimatedFormWrapper>
           </Form>
         )}
       </Formik>
