@@ -16,6 +16,7 @@ const DropDownItem = styled.div`
   padding: 0.2rem;
   cursor: pointer;
   transition-duration: 0.4s;
+  color: rgb(121 189 177) !important;
 
   :hover {
     cursor: pointer;
@@ -48,6 +49,7 @@ const DropDownWrapper = styled.div`
 const Button = styled.button`
   transition-duration: 0.8s;
   height: 3rem;
+  color: rgb(8, 80, 67);
   width: 6rem;
   font-size: 1rem;
   border: 2px solid white;

@@ -21,8 +21,9 @@ const Switcher = styled.button`
   height: 2rem;
   font-weight: bold;
   font-size: 1rem;
-  border: 2px solid black;
+  border: 2px solid rgb(8, 80, 67);
   transition-duration: 0.8s;
+  color: rgb(8, 80, 67);
 
   :hover {
     cursor: pointer;
