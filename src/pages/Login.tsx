@@ -52,7 +52,7 @@ const Login = () => {
   };
 
   useEffect(() => {
-    if (authed) setTimeout(() => navigate("/adresar"), 200);
+    if (authed) setTimeout(() => navigate("/adresar"), 700);
   }, [authed, navigate]);
 
   return (

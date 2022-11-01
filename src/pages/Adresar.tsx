@@ -197,8 +197,8 @@ const Adresar = ({
                 </Button2>
               </TableRow>
             ))}
+            <Pagination data={contacts} setCurrentRecords={setTableElms} />
           </TableView>
-          <Pagination data={contacts} setCurrentRecords={setTableElms} />
         </>
       )}
     </div>

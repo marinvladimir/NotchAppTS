@@ -14,6 +14,16 @@ export const FormWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   height: 100vh;
+  @keyframes resize {
+    0% {
+      height: 0rem;
+    }
+    100% {
+      height: 100vh;
+    }
+  }
+  animation-name: resize;
+  animation-duration: 1s;
 `;
 
 export const FieldsWrapper = styled.div`
@@ -43,8 +53,19 @@ export const SuccessBox = styled.div`
 export const TableView = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   padding: 2rem;
   color: #c9c5ba;
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  animation-name: fadeIn;
+  animation-duration: 1s;
 `;
 
 export const TableRow = styled.div`
