@@ -3,7 +3,7 @@
 mvladi00@fesb.hr
 Start1234!
 
-APP can be tested on : https://mellifluous-cocada-2af184.netlify.app/adresar
+APP can be tested on : https://incandescent-tapioca-d6b978.netlify.app
 
 NOTE: the issue with redirection seems to be only appearing sometimes due to some netlify restrictions.
 
