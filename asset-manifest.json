@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/NotchAppTS/static/css/main.f9b5ba07.css",
+    "main.js": "/NotchAppTS/static/js/main.c5f6c6d6.js",
+    "static/media/loader.svg": "/NotchAppTS/static/media/loader.0db5751a0dd1434e2752bbd5216354e4.svg",
+    "index.html": "/NotchAppTS/index.html",
+    "static/media/star.svg": "/NotchAppTS/static/media/star.e1b0b8f457664c7cb77024f5bd203579.svg",
+    "main.f9b5ba07.css.map": "/NotchAppTS/static/css/main.f9b5ba07.css.map",
+    "main.c5f6c6d6.js.map": "/NotchAppTS/static/js/main.c5f6c6d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9b5ba07.css",
+    "static/js/main.c5f6c6d6.js"
+  ]
+}
